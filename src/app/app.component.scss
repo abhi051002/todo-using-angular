@@ -1,0 +1,110 @@
+/* Overall page */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px;
+  background: #f0f2f5;
+}
+
+/* Card */
+.card-layout {
+  width: 520px;
+  border-radius: 12px;
+  padding: 24px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background: white;
+}
+
+/* Header */
+.card-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Content area */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input field */
+.full-width {
+  width: 100%;
+}
+
+/* Edit mode banner */
+.edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8f2ff;
+  border-left: 4px solid #1976d2;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.edit-container p {
+  margin: 0;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.clear-btn p {
+  margin: 0;
+  cursor: pointer;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Todo list items */
+.listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  transition: background 0.15s ease;
+}
+
+.listing:hover {
+  background: #f3f3f3;
+}
+
+/* Done state */
+.crossOver {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Empty state */
+.error-container p {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Icons */
+.pointer {
+  cursor: pointer;
+  font-size: 22px;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.pointer:hover {
+  transform: scale(1.15);
+}
+
+.disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
